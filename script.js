@@ -62,3 +62,55 @@
 // task 6
 
 
+//რას დააუბრუნებს 6 === “6”? (true ან false) ახსენით რატო?
+// დააბრუნებს false რადგან კონვერტაციას არ გააკეთებს. სტრინგი და ნამბეერი.
+
+// task 7 
+// მოცემულია მასივი:
+// ამოიღეთ მარტო ის სიტყვები რომლების სიმბოლოების რაოდენობა 5-ზე მეტია და მოიცავენ ‘ava’-ს;
+
+// let array = ["html", "css", "bootstrap", "javascript","python"];
+
+// for (let i = 0; i < array.length; i ++){
+//     if (array[i].length > 5 && array[i].includes ("ava")) {
+//         console.log(array[i]);
+//     }
+// }
+
+// task 8 
+
+
+
+// let user = {
+// 	name: "giorgi",
+// 	age:  20,
+// 	studentstatus: "active",
+// };
+
+
+
+//   if (user.age > 18 && user.studentstatus === "active") {
+//     console.log("Hello");
+//   }
+//   if (user.name === "giorgi") {
+//     console.log("Hello Giorgi");
+//   }
+//   if (user.status === "active" || user.age < 25) {
+//     console.log("Hello  world");
+//   } else {
+//     console.log("Error");
+//   }
+// ერორი რატო არ იბეჭდება? 
+
+
+// task 9 
+
+let array = [ "watermelon", "pear", 10, 45, 50, "apple", "ananas" ] ;
+ 
+
+  for( let i = 0; i < array.length; i ++){
+      if (typeof array[i] === "string") {
+          console.log(array[i]);
+    }
+  }
+
