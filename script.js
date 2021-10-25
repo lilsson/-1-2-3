@@ -52,18 +52,18 @@
 
 // მოცემული მასივიდან for ციკლის საშუალებით კონსოლში გამოიტანეთ მხოლოდ დადებითი რიცხვები:
 
-let arr = [[2, -3, 5, 11], [1, -30, -11, 100], [-1, -3, -4]];
+// let arr = [[2, -3, 5, 11], [1, -30, -11, 100], [-1, -3, -4]];
 
-for (let i = 0; i < arr.length; i++) {
-    const numbers = arr[i];
-  for (let x = 0; x < numbers.length; x++) {
-    const positive = numbers[x];
-    if (positive > 0) {
-      console.log (positive);
-    }
+// for (let i = 0; i < arr.length; i++) {
+//     const numbers = arr[i];
+//   for (let x = 0; x < numbers.length; x++) {
+//     const positive = numbers[x];
+//     if (positive > 0) {
+//       console.log (positive);
+//     }
     
-  }
-}
+//   }
+// }
 // task 6
 
 
@@ -119,3 +119,40 @@ for (let i = 0; i < arr.length; i++) {
 //     }
 //   }
 
+
+
+// Lecture #2
+
+// შექმენით ფუნქცია, რომელსაც გადავცემთ n რაოდენობის მნიშვნელობას და დააბრუნოს მხოლოდ დადებითი რიცხვების ჯამს:
+// 2, -9, 5, 11, -30, 100, -8, -11, -4, 5, -6, 8;
+ 
+
+// function sum(...args) {
+//    let  newsum = 0; 
+
+//    for (let item of args){
+//       if (item > 0) {
+//         newsum += item;
+//       }
+//    }
+//    return newsum;
+// }
+
+//    let rezult = sum(2, -9, 5, 11, -30, 100, -8, -11, -4, 5, -6, 8);
+//    console.log(rezult);
+
+//    ფუნქციის საშულებით გამოიტანეთ ყველა რიცხვის ჯამი:
+// 10, 50, 6, 7, 8, 11, 6, 3, 9
+ 
+ function sum (... args){
+   let newsum = 0;
+
+   for (let item of args) {
+      newsum += item;
+    }
+
+   return newsum;
+ }
+  
+ let rezult = sum (10, 50, 6, 7, 8, 11, 6, 3, 9);
+ console.log(rezult);
