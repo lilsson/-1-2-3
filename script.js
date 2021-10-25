@@ -50,15 +50,20 @@
 
 // task 5
 
-// let arr = [[2, -3, 5, 11], [1, -30, -11, 100], [-1, -3, -4]];
+// მოცემული მასივიდან for ციკლის საშუალებით კონსოლში გამოიტანეთ მხოლოდ დადებითი რიცხვები:
 
-// for( let i = 0; i < arr.length; i ++){
-//     if (arr[i] > 0){
-//         console.log(arr[i]);
-//     }
-// }
-// არ მახსოვს ვერ გავაკეთე
- 
+let arr = [[2, -3, 5, 11], [1, -30, -11, 100], [-1, -3, -4]];
+
+for (let i = 0; i < arr.length; i++) {
+    const numbers = arr[i];
+  for (let x = 0; x < numbers.length; x++) {
+    const positive = numbers[x];
+    if (positive > 0) {
+      console.log (positive);
+    }
+    
+  }
+}
 // task 6
 
 
@@ -105,12 +110,12 @@
 
 // task 9 
 
-let array = [ "watermelon", "pear", 10, 45, 50, "apple", "ananas" ] ;
+// let array = [ "watermelon", "pear", 10, 45, 50, "apple", "ananas" ] ;
  
 
-  for( let i = 0; i < array.length; i ++){
-      if (typeof array[i] === "string") {
-          console.log(array[i]);
-    }
-  }
+//   for( let i = 0; i < array.length; i ++){
+//       if (typeof array[i] === "string") {
+//           console.log(array[i]);
+//     }
+//   }
 
