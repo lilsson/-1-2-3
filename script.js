@@ -123,7 +123,7 @@
 
 // Lecture #2
 
-// შექმენით ფუნქცია, რომელსაც გადავცემთ n რაოდენობის მნიშვნელობას და დააბრუნოს მხოლოდ დადებითი რიცხვების ჯამს:
+// 1. შექმენით ფუნქცია, რომელსაც გადავცემთ n რაოდენობის მნიშვნელობას და დააბრუნოს მხოლოდ დადებითი რიცხვების ჯამს:
 // 2, -9, 5, 11, -30, 100, -8, -11, -4, 5, -6, 8;
  
 
@@ -141,18 +141,58 @@
 //    let rezult = sum(2, -9, 5, 11, -30, 100, -8, -11, -4, 5, -6, 8);
 //    console.log(rezult);
 
-//    ფუნქციის საშულებით გამოიტანეთ ყველა რიცხვის ჯამი:
+//  2.  ფუნქციის საშულებით გამოიტანეთ ყველა რიცხვის ჯამი:
 // 10, 50, 6, 7, 8, 11, 6, 3, 9
  
- function sum (... args){
-   let newsum = 0;
+//  function sum (... args){
+//    let newsum = 0;
 
-   for (let item of args) {
-      newsum += item;
-    }
+//    for (let item of args) {
+//       newsum += item;
+//     }
 
-   return newsum;
- }
+//    return newsum;
+//  }
   
- let rezult = sum (10, 50, 6, 7, 8, 11, 6, 3, 9);
+//  let rezult = sum (10, 50, 6, 7, 8, 11, 6, 3, 9);
+//  console.log(rezult);
+
+  // 3. შექმენით ფუნქცია სახელად printname რომელსაც პარამეტრად გადაეცემა ობიექტი. ობიექტს ექნება  ფორმა
+ // ფუნქციამ უნდა დააბრუნოს სახელი და გვარი ადგილის გამოტოვებით (მაგ: 'giorgi saakadze') თუ isloggedin არის true და 
+ //false თუ isloggedin ფროფერთი არის false;
+
+//  function printname() {
+
+//   let user = {
+//     firstname: 'giorgi',
+//     lastname: 'saakadze',
+//     age: 32,
+//     isloggedin: true
+//   }
+//      if(user.isloggedin === true){
+//        return "giorgi saakadze";
+//      } else{
+//        return "false";
+//      }
+  
+
+   
+//  }
+
+//  let x = printname();
+//  console.log(x);
+
+// 4.შექმენით ფუნქცია რომელსაც გადაეცემა ერთი პარამეტრი. ეს პარამეტრი უნდა იყოს რიცხვების მასივი და 
+// ფუნქციამ უნდა დააბრუნოს ამ რიცხვებიდან მაქსიმალური:
+//!!!!!!!!!!!!!!! forEach ვერ გავაკეთე ფუნქციის დროს
+
+function y() {
+  let item = [2, -9, 5, 11, -30, 100, -8, -11, -4, 5, -6, 8 ];
+ for( let x of item){
+   if( x > 99) {
+     return x;
+   }
+ }
+}
+ let rezult = y();
  console.log(rezult);
