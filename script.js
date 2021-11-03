@@ -186,13 +186,18 @@
 // ფუნქციამ უნდა დააბრუნოს ამ რიცხვებიდან მაქსიმალური:
 //!!!!!!!!!!!!!!! forEach ვერ გავაკეთე ფუნქციის დროს
 
-function y() {
-  let item = [2, -9, 5, 11, -30, 100, -8, -11, -4, 5, -6, 8 ];
- for( let x of item){
-   if( x > 99) {
-     return x;
-   }
- }
-}
- let rezult = y();
- console.log(rezult);
+// function y() {
+//   let item = [2, -9, 5, 11, -30, 100, -8, -11, -4, 5, -6, 8 ];
+//  for( let x of item){
+//    if( x > 99) {
+//      return x;
+//    }
+//  }
+// }
+//  let rezult = y();
+//  console.log(rezult);
+
+//  let items = ['html', 'css', 'javascript', 'boostrap'];
+ 
+//  let numbers = items.filter(item => item.length > 4);
+//  console.log ( numbers );
